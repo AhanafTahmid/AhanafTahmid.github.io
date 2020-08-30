@@ -94,10 +94,19 @@
       <button class="btn btn-success" style="margin-left:-100px;margin-top:75px" id="pauseAudio" >Stop Music</button>
       </div>
 
-<audio autoplay id="bgAudio" loop>
+<!--<audio autoplay id="bgAudio" loop>
   <source src="assets/audio/bg.mp3" type="audio/mpeg">
-</audio>
+</audio>-->
 
+	    
+	    
+	    
+<embed src="assets/audio/bg.mp3" id="bgAudio" autostart="true" loop="true"
+width="2" height="0">
+</embed>
+	    
+	    
+	    
 <script>
 var vol = document.getElementById("bgAudio");
 vol.volume = 0.9;
