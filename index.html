@@ -94,19 +94,34 @@
       <button class="btn btn-success" style="margin-left:-100px;margin-top:75px" id="pauseAudio" >Stop Music</button>
       </div>
 
-<!--<audio autoplay loop id="bgAudio">
+	    
+	    
+	    
+<audio autoplay loop id="bgAudio">
  <source src="assets/audio/bg.mp3" type="audio/mpeg">
-</audio>-->
+</audio>
 	    
+	
 	    
-<iframe src="http://ahnaftahmid.42web.io" title="Music">
-</iframe>
-	    
-	    
+
 	   
 	    
 	    
 <script>
+var counts = 1
+document.getElementById('bgAudio').addEventListener('ended', function(){
+   this.currentTime = 0;
+   if(count <= 100){
+      this.play();
+   }
+   counts++;
+}, false);	
+	
+	
+	
+	
+	
+	
 var vol = document.getElementById("bgAudio");
 vol.volume = 0.9;
 vol.playbackRate=1.05;
