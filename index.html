@@ -127,10 +127,15 @@ var sound = document.getElementById("bgAudio");
         sound.pause();
         sound.currentTime = 0;
 }
-else{   
+	
+
+else if{   
         button.innerHTML = "Stop Music";
         sound.play();
 }
+	else{
+	sound.play();
+	}
 };
 </script> 
 
