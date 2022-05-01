@@ -122,16 +122,15 @@ button.onclick = function() {
   count += 1;
   console.log(count);  
 var sound = document.getElementById("bgAudio");
- if(count%2==1){
-        button.innerHTML = "Start Music";
+ if(count%2==0){
+       button.innerHTML = "Stop Music";
+        sound.play();
+}
+else{   
+	 button.innerHTML = "Start Music";
         sound.pause();
         sound.currentTime = 0;
-}
-	
-
-else{   
-        button.innerHTML = "Stop Music";
-        sound.play();
+        
 }
 	
 };
